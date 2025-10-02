@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stockholm Cycling 🚲</title>
+    <style>
+      h1 {
+        font-weight: 900;
+        font-size: 34px;
+        color: #19183b;
+        text-align: center;
+        margin-bottom: 0px;
+      }
+
+      h2 {
+        font-weight: 900;
+        font-size: 24px;
+        text-align: center;
+        color: #ffffff;
+        padding: 10px 0;
+        margin-top: 0px;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 90%;
+        border-radius: 10%;
+        box-shadow: 0 0 8px 6px rgba(0, 0, 0, 0.14);
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 1.4;
+        text-align: center;
+        padding: 40px 40px 20px 40px;
+      }
+
+      a {
+        color: #19183b;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      button {
+        border-radius: 25px;
+        margin: 10px auto 40px auto;
+        display: block;
+        background-color: #fff;
+        border: 1px solid #19183b;
+        color: #19183b;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 16px 24px;
+        text-decoration: none;
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        color: #fff;
+        background: #19183b;
+      }
+
+      .project {
+        max-width: 50%;
+        margin: 0 auto;
+        padding: 20px 0 10px 0;
+        background: linear-gradient(0deg, #fa812f, #fab12f, #fab12f, #fa812f);
+        border-radius: 20px;
+      }
+
+      .number {
+        font-family: monospace;
+      }
+
+      .footer {
+        font-size: 16px;
+        text-align: center;
+        color: #19183b;
+        padding: 10px 0 5px 0;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="project">
+      <h1>🚲 <br />I like cycling</h1>
+      <h2>Leisurely in Stockholm</h2>
+      <hr />
+      <br />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/174/299/original/stockholm-cycling.png?1759167710"
+        alt="Cycling in Stockholm"
+      />
+      <p>
+        <strong>Leisure cycling</strong> is a popular activity in Stockholm,
+        with many dedicated bike lanes and beautiful parks to explore. Leisure
+        cycling is all about easy, unhurried rides—cruising along waterfronts
+        and parks to enjoy the city rather than race through it—with plenty of
+        stops for fika (coffee and a sweet treat) at neighborhood cafés. There
+        is a space to roam: Stockholm maintains roughly
+        <span class="number">1,170</span> km of cycleways across the city,
+        including about <span class="number">360</span> km of higher-standard
+        primary routes that link districts and key transit hubs.
+
+        <br /><br />
+        Find out more about
+        <a
+          href="https://sv.wikipedia.org/wiki/Stockholm"
+          target="_blank"
+          alt="Stockholm"
+          >Stockholm</a
+        >
+      </p>
+
+      <button>Join me for a ride!</button>
+      <hr />
+
+      <p class="footer">Coded by <em>Olga</em></p>
+    </div>
+    <script>
+      function isValidEmail(email) {
+        // pragmatic check: one "@", at least one dot after, no spaces
+        return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email);
+      }
+
+      function joinCycling() {
+        let name = prompt("What's your name?");
+        let email = prompt("What's your email?");
+
+        const icon = "🚲";
+
+        if (!email || !email.trim()) {
+          alert(
+            `You need to provide an email to join the cycling group. \nTry again and Happy cycling! ${icon}`
+          );
+        } else if (!isValidEmail(email)) {
+          alert(
+            `Hmm... that doesn't look like a valid email. \nTry again and Happy cycling! ${icon}`
+          );
+        } else {
+          alert(
+            `Thank you ${name}! I will contact you at ${email}. \nHappy cycling! ${icon}`
+          );
+        }
+      }
+
+      let button = document.querySelector("button");
+      button.addEventListener("click", joinCycling);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        color: #1a63d6;
+        font-size: 34px;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 10px;
+      }
+
+      h2 {
+        color: #272044;
+        font-size: 34px;
+        text-align: center;
+        margin-top: 0%;
+      }
+
+      h3 {
+        color: black;
+        background-color: tra;
+        text-align: center;
+      }
+
+      button {
+        color: white;
+        background-color: #1a63d6;
+        border: 1px solid #1a63d6;
+        border-radius: 30px;
+        padding: 20px 30px;
+        display: block;
+        margin: 20px auto 20px auto;
+        font-size: 16px;
+        cursor: pointer;
+        transition: all 200ms ease-in-out;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      }
+
+      button:hover {
+        background-color: white;
+        color: #1a63d6;
+      }
+
+      .sun {
+        font-size: 40px;
+        text-align: center;
+      }
+
+      .block {
+        background-color: transparent;
+        border-radius: 10px;
+        width: 400px;
+        margin: 0 auto;
+        padding: 10px 10px 20px 10px;
+        transition: all 200ms ease-in-out;
+      }
+
+      .block:hover {
+        background-color: rgba(241, 196, 15, 0.1);
+      }
+
+      .temperature {
+        color: #272044;
+        text-align: center;
+        font-size: 1.17em;
+        font-family: monospace;
+      }
+
+      .footer {
+        color: gray;
+        font-size: 18px;
+        text-align: center;
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sun">🌤️</div>
+    <h1>Currently 21&deg in Tokyo</h1>
+    <h2>13&deg / <strong>23&deg</strong></h2>
+
+    <div class="block">
+      <h3>🌧️ Tomorrow</h3>
+      <div class="temperature">10&deg / <strong>22&deg</strong></div>
+    </div>
+
+    <div class="block">
+      <h3>🌥️ Saturday</h3>
+      <div class="temperature">15&deg / <strong>17&deg</strong></div>
+    </div>
+
+    <div class="block">
+      <h3>☀️ Sunday</h3>
+      <div class="temperature">25&deg / <strong>28&deg</strong></div>
+    </div>
+
+    <button>Change city</button>
+
+    <div class="footer">Coded by olga</div>
+  </body>
+</html>
