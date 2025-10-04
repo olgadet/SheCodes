@@ -3,67 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      body {
-        display: block;
-        margin: 8px;
-      }
-      h1 {
-        font-size: 34px;
-        color: #272044;
-        text-align: center;
-        line-height: 48px;
-        margin: 120px auto 0 auto;
-        padding: 0 auto;
-        font-family: Helvetica;
-      }
-
-      h2 {
-        font-family: Helvetica;
-        color: #8064e9;
-        font-size: 34px;
-        font-weight: 900;
-        text-align: center;
-        margin-top: 5px;
-      }
-
-      button {
-        background-color: #8064e9;
-        color: white;
-        border: none;
-        padding: 16px 24px;
-        font-size: 16px;
-        line-height: 22px;
-        cursor: pointer;
-        border-radius: 19px;
-        display: block;
-        margin: 50px auto;
-        transition: all 250ms ease;
-        box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
-      }
-
-      button:hover {
-        background-color: #5e41a7;
-        cursor: pointer;
-      }
-
-      p {
-        font-family: "Source Code Pro", monospace;
-        font-size: 18px;
-        text-align: center;
-        line-height: 28px;
-        margin-top: 50px;
-      }
-    </style>
+    <title>Weather app</title>
   </head>
   <body>
-    <h1>👩‍💻 SheCodes is a Coding Workshop for Women</h1>
-    <h2>Access a new career in Technology</h2>
+    <form action="/submit">
+      <input type="text" placeholder="Enter a city..." />
+      <input type="submit" value="Search" />
+    </form>
+
+    <h1>Paris</h1>
+
     <p>
-      SheCodes teaches coding, design and management skills to women <br />
-      Limited number of spots available!
+      Saturday 15:32, moderate rain <br />
+      Humidity: <strong>87%</strong>, Wind
+      <strong>7.2 km/h</strong>
     </p>
-    <button>Join now</button>
+
+    <p>14&degC</p>
+
+    <ul>
+      <li>
+        Sun 🌤️ <br />
+        <strong>14&degC </strong> - 18&deg C
+      </li>
+      <li>
+        Mon 🌤️ <br />
+        <strong>14&degC </strong> - 18&deg C
+      </li>
+      <li>
+        Tue 🌤️ <br />
+        <strong>14&degC </strong> - 18&deg C
+      </li>
+      <li>
+        Wed 🌤️ <br />
+        <strong>14&degC </strong> - 18&deg C
+      </li>
+      <li>
+        Thu 🌤️ <br />
+        <strong>14&degC </strong> - 18&deg C
+      </li>
+    </ul>
   </body>
+  <footer>
+    This project was coded by <a href="">Olga</a> and is
+    <a href="">on Github</a> and <a href="">hosted on Netlify</a>
+  </footer>
 </html>
